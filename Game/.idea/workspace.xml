@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Game:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="de4937ca-4938-439c-81f2-7faa47298962" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2GaWzjisxdeoIdymoZwN9rzwV8p" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Game" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.LestaGame">
+    <configuration name="LestaGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.LestaGame" />
+      <module name="Game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="Game" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.LestaGame" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LestaGame" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de4937ca-4938-439c-81f2-7faa47298962" name="Default Changelist" comment="" />
+      <created>1666627439584</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666627439584</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="378" y="148" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1666872624550">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="378" y="148" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1666872624550" />
+    <state x="410" y="105" key="FileChooserDialogImpl" timestamp="1666872632992">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="410" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1666872632992" />
+    <state width="1323" height="108" key="GridCell.Tab.0.bottom" timestamp="1666873271545">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="108" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1666873271545" />
+    <state width="1323" height="108" key="GridCell.Tab.0.center" timestamp="1666873271544">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="108" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1666873271544" />
+    <state width="1323" height="108" key="GridCell.Tab.0.left" timestamp="1666873271544">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="108" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1666873271544" />
+    <state width="1323" height="108" key="GridCell.Tab.0.right" timestamp="1666873271545">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="108" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1666873271545" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1666794886301">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1666794886301" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1666794886301">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1666794886301" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1666794886300">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1666794886300" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1666794886301">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1666794886301" />
+    <state x="64" y="0" key="SettingsEditor" timestamp="1666872640771">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="64" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1666872640771" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1666709222414">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1666709222414" />
+  </component>
+</project>
