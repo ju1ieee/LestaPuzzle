@@ -11,7 +11,10 @@ public class LestaGame extends Game {
     private boolean isGameStopped=false;
     private int score = 0;
     private static final String SELECTED = "\u2728";
-    private ArrayList<Color> colorArrayList = new ArrayList<Color>();
+    private static final String DOWN_ARROW = "\uD83E\uDC2B";
+    private static final String  DIAGONAL_CROSS = "\u274C";
+    private ArrayList<Color> colorArrayList = new ArrayList<>();
+    private ArrayList<Color> rgb;
     private static GameObject objForSwap;
 
     @Override
@@ -45,7 +48,7 @@ public class LestaGame extends Game {
     private GameObject creationGameObject(int x, int y){
         boolean isBlocked = isBlockedInfo(x, y);
         Color color = isColoredInfo(x,y);
-        if (color==null) color=isBlocked?Color.BLACK:getColor();
+        if (color==null) color=isBlocked?Color.BLACK:getColor(colorArrayList);
         return new GameObject(x,y,isBlocked,color);
     }
 
@@ -55,11 +58,10 @@ public class LestaGame extends Game {
         return true; //остальное заблочено
     }
     private Color isColoredInfo(int x, int y){
-        if (x==1 && y==0) return Color.RED;
-        if (x==3 && y==0) return Color.GREEN;
-        if (x==5 && y==0) return Color.BLUE;
+        if ((x==1 || x==3 || x==5) && (y==0)) {setCellValue(x, y, DOWN_ARROW); return getColor(rgb);}
         if ((x==2 && y==3)||(x==2 && y==5)||(x==4 && y==3)||(x==4 && y==5)) return Color.WHITE; //пустые клетки
-        if ((x==2 && y==2)||(x==2 && y==4)||(x==2 && y==6)||(x==4 && y==2)||(x==4 && y==4)||(x==4 && y==6)) return Color.BLACK;
+        if ((x==2 && y==2)||(x==2 && y==4)||(x==2 && y==6)||(x==4 && y==2)||(x==4 && y==4)||(x==4 && y==6))
+            {setCellValue(x, y, DIAGONAL_CROSS); return Color.GRAY;}
         return null;
     }
 
@@ -71,9 +73,9 @@ public class LestaGame extends Game {
         }
     }
 
-    public Color getColor () {
-        Color color = colorArrayList.get(0);
-        colorArrayList.remove(0);
+    public Color getColor (ArrayList<Color> colors) {
+        Color color = colors.get(0);
+        colors.remove(0);
         return color;
     }
 
@@ -84,6 +86,9 @@ public class LestaGame extends Game {
             colorArrayList.add(Color.BLUE);
         }
         Collections.shuffle(colorArrayList);
+
+        rgb = new ArrayList<>(Arrays.asList(Color.RED, Color.GREEN, Color.BLUE));
+        Collections.shuffle(rgb);
     }
 
     @Override
@@ -141,20 +146,20 @@ public class LestaGame extends Game {
 
     private boolean isWin(){
         boolean isWin = false;
-        Set<Color> redSet = new HashSet<>();
-        Set<Color> greenSet = new HashSet<>();
-        Set<Color> blueSet = new HashSet<>();
+        Set<Color> firstSet = new HashSet<>();
+        Set<Color> secondSet = new HashSet<>();
+        Set<Color> thirdSet = new HashSet<>();
 
         for (int y = 2; y < SIDE; y++) {
             for (int x = 1; x < 6; x+=2) {
-                if (x==1) redSet.add(gameField[y][x].color);
-                if (x==3) greenSet.add(gameField[y][x].color);
-                if (x==5) blueSet.add(gameField[y][x].color);
+                if (x==1) firstSet.add(gameField[y][x].color);
+                if (x==3) secondSet.add(gameField[y][x].color);
+                if (x==5) thirdSet.add(gameField[y][x].color);
             }
         }
-        if (redSet.size()==1 && redSet.contains(Color.RED)){
-            if (greenSet.size()==1 && greenSet.contains(Color.GREEN)) {
-                if (blueSet.size() == 1 && blueSet.contains(Color.BLUE)) {
+        if (firstSet.size()==1 && firstSet.contains(gameField[0][1].color)){
+            if (secondSet.size()==1 && secondSet.contains(gameField[0][3].color)) {
+                if (thirdSet.size() == 1 && thirdSet.contains(gameField[0][5].color)) {
                     isWin=true;
                 }
             }
